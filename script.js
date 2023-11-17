@@ -4,14 +4,14 @@ document.addEventListener('DOMContentLoaded', function () {
 
     // Adicione informações detalhadas conforme necessário
     const detalhesPneu = {
-        'Convencional': 'otimo pneu...',
-        'Off-road': 'otimo pneu...',
-        'Pneu Misto': 'otimo pneu...',
+        'Convencional': 'quando a carcaça é composta por lonas sobrepostas e cruzadas umas em relação às outras...',
+        'Off-road': 'para quem gosta de estar em terrenos arenosos, pedregosos ou com muita lama....',
+        'Pneu Misto': 'Um olho na altura dos sulcos e o outro no desenho da banda de rodagem. ...',
         'Pneus Verdes': 'otimo pneu...',
-        'Pneus Radicais': 'otimo pneu...',
-        'Pneus de Carga': 'otimo pneu...',
+        'Pneus Radicais': 'apresenta camadas radiais transversais que funcionam na direção horizontal ao deslocamento....',
+        'Pneus de fuga': 'otimo pneu...',
         'Pneus de trator': 'otimo pneu...',
-        'Pneus de aviao': 'otimo pneu...',
+        'Pneus de aviao': 'são construídos de 3 principais materiais, que são: aço, borracha e tecido. ...',
         'Pneus de fusca turbinado': 'otimo pneu...',
         'Pneus de caminhao': 'otimo pneu...',
         'Pneus de cariola': 'otimo pneu...',
