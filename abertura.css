@@ -1,0 +1,44 @@
+
+    body {
+      margin: 0;
+      overflow: hidden;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      background-color: #282c34;
+      color: white;
+      font-family: 'Arial', sans-serif;
+    }
+
+    .opening-animation {
+      position: relative;
+      animation: fadeIn 2s ease-in-out;
+    }
+
+    .dot {
+      width: 20px;
+      height: 20px;
+      border-radius: 50%;
+      position: absolute;
+      animation: moveDots 5s linear infinite;
+    }
+
+    .dot1 { background-color: #FF5733; top: 50%; left: 25%; }
+    .dot2 { background-color: #33FF57; top: 75%; left: 50%; }
+    .dot3 { background-color: #5733FF; top: 25%; left: 75%; }
+
+    @keyframes fadeIn {
+      0% { opacity: 0; }
+      100% { opacity: 1; }
+    }
+
+    @keyframes moveDots {
+      0% { transform: translate(0, 0); }
+      25% { transform: translate(200px, 200px); }
+      50% { transform: translate(400px, 0); }
+      75% { transform: translate(200px, -200px); }
+      100% { transform: translate(0, 0); }
+    }
+
+
