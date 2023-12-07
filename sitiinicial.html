@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Loja de Pneus</title>
+    <style>
+        /* Adicione estilos CSS aqui */
+    </style>
+</head>
+<body>
+
+    <h1>Loja de Pneus</h1>
+
+    <label for="tipoPneu">Selecione o tipo de pneu:</label>
+    <select id="tipoPneu">
+        <option value="passeio">Passeio</option>
+        <option value="caminhao">Caminhão</option>
+        <option value="caminhao">aviao</option>
+        <option value="caminhao">trator</option>
+        
+    
+    </select>
+
+    <label for="precoPneu">Preço:</label>
+    <input type="text" id="precoPneu" placeholder="Insira o preço">
+
+    <label for="imagemPneu">Imagem do pneu:</label>
+    <input type="file" id="imagemPneu">
+
+    <button onclick="adicionarPneu()">Adicionar Pneu</button>
+
+    <div id="catalogo">
+        <!-- Aqui serão exibidos os pneus adicionados -->
+    </div>
+
+    <script>
+        function adicionarPneu() {
+            // Lógica para adicionar pneu ao catálogo
+            var tipo = document.getElementById("tipoPneu").value;
+            var preco = document.getElementById("precoPneu").value;
+            var imagem = document.getElementById("imagemPneu").value;
+
+            // Crie elementos HTML para exibir as informações
+            var novoPneu = document.createElement("div");
+            novoPneu.innerHTML = "<p>Tipo: " + tipo + "</p><p>Preço: " + preco + "</p><img src='" + imagem + "' alt='Imagem do Pneu'>";
+
+            // Adicione o novo pneu ao catálogo
+            document.getElementById("catalogo").appendChild(novoPneu);
+        }
+    </script>
+
+</body>
+</html>
